@@ -3,6 +3,9 @@ name: My Lobster
 on:
   workflow_dispatch:
 
+  schedule:
+    - cron: '0 0 * * *'
+
 jobs:
   lobster-job:
     runs-on: ubuntu-latest
